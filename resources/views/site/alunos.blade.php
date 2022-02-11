@@ -8,7 +8,12 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>Matrí­cula</title>
     <link rel="stylesheet" href="{{url(mix('site-css/style.scss.css'))}}">
-    <link rel="stylesheet" href="{{url(mix('site-css/yearpicker.css'))}}">
+    <link rel="stylesheet" href="{{url(mix('site-css/yearpicker.css'))}}">    
+    <link rel="stylesheet" href="{{url(mix('site-css/buttons.bootstrap5.min.css'))}}">
+    <link rel="stylesheet" href="{{url(mix('site-css/dataTables.bootstrap5.min.css'))}}">
+    <link rel="stylesheet" href="{{url(mix('site-css/fontawesome.min.css'))}}">
+    <link rel="stylesheet" href="{{url(mix('site-css/brands.min.css'))}}">
+    <link rel="stylesheet" href="{{url(mix('site-css/solid.min.css'))}}">
 </head>
 
 <body>
@@ -22,8 +27,7 @@
         <div class="form-group">
             <label for="ano">Calendario:</label>
             <input name="ano" type="text" id="ano" class="yearpicker form-control" value="" >
-        </div>
-
+        </div>        
         <div class="form-group">
             <label for="escola">Escola:</label>
             <select name="escola" class="form-control" id="escola">
@@ -63,6 +67,7 @@
                 </div>
                 <div class="modal-body">
                     <form id="alunoForm" name="alunoForm" class="form-horizontal" >
+                        
                         <input type="hidden" name="aluno_id" id="aluno_id">
                         <div class="form-group">
                             Nome Completo:<br>
@@ -97,6 +102,14 @@
     <script src="{{url(mix('site-js/dataTables.js'))}}"></script>
     <script src="{{url(mix('site-js/dataTables-bs5.js'))}}"></script>
     <script src="{{url(mix('site-js/yearpicker.js'))}}"></script>
+    <script src="{{url(mix('site-js/dataTables.buttons.min.js'))}}"></script>
+    <script src="{{url(mix('site-js/buttons.bootstrap5.min.js'))}}"></script>
+    <script src="{{url(mix('site-js/jszip.min.js'))}}"></script>
+    <script src="{{url(mix('site-js/pdfmake.min.js'))}}"></script>
+    <script src="{{url(mix('site-js/vfs_fonts.min.js'))}}"></script>
+    <script src="{{url(mix('site-js/buttons.html5.min.js'))}}"></script>
+    <script src="{{url(mix('site-js/buttons.print.min.js'))}}"></script>
+    {{-- <script src="{{url(mix('site-js/fontawesome.min.js'))}}"></script> --}}
     <script src="{{url(mix('site-js/alunos.js'))}}"></script>
     
 </body>

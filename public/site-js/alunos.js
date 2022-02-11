@@ -123,21 +123,61 @@ $(function(){
     $('select[name="turma"]').on('change',function(){ 
         $turma = $(this).val();
         $escola = $('#escola').val();
-        $ano = $('#ano').val(); 
-        console.log($turma,$escola,$ano);
+        $ano = $('#ano').val();         
 
         $(".data-table").DataTable().clear();
         $(".data-table").DataTable().destroy();
 
-        $(".data-table").DataTable({
-            serverSide:true,
-            processing:true,
+        $(".data-table").DataTable({            
+            //serverSide:true,
+             processing:true,
             ajax:'alunos/buscaralunos/'+ $ano + '/' + $escola + '/' + $turma,
             columns:[
                 {data:'ed47_i_codigo',name:'ed47_i_codigo'},
                 {data:'ed47_v_nome',name:'ed47_v_nome'},                
                 {data:'acoes',name:'acoes'}
-            ]
+            ],
+            paging:true,            
+            responsive: true,
+            // scrollY: 300,
+            // deferRender: true,
+            // scroller: true,
+            dom: 'Bfrtip',
+            buttons: [
+                {
+                    extend: 'excel',
+                    text:' Exportar para <i class="fa-solid fa-file-excel"></i>',
+                    title: 'ListaAlunos',
+                    autoFilter: true,
+                    className:'btnExcel' ,                
+                    exportOptions: {                        
+                        columns: [0, 1]                        
+                    }
+                },{
+                    extend: 'pdf',
+                    text:'Exportar para <i class="fa-solid fa-file-pdf"></i>',
+                    orientation: 'landscape' ,
+                    title: 'ListaAlunos',
+                    className:'btnPdf' ,
+                    exportOptions:{
+                        columns:[0,1]
+                    },
+                }
+            ],
+            "oLanguage": {
+                "sLengthMenu": "Mostrando _MENU_ registros",
+                "sZeroRecords": "Nenhum registro encontrado",
+                "sInfo": "Mostrando _START_ / _END_ de _TOTAL_ registro(s)",
+                "sInfoEmpty": "Mostrando 0 / 0 de 0 registros",
+                "sInfoFiltered": "(filtrado de _MAX_ registros)",
+                "sSearch": "Pesquisar: ",
+                "oPaginate": {
+                    "sFirst": "In�cio",
+                    "sPrevious": "Anterior",
+                    "sNext": "Pr�ximo",
+                    "sLast": "�ltimo"
+                }
+            }
         });
 
     })

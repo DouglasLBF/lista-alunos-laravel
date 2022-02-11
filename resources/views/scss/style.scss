@@ -1,5 +1,6 @@
 @import "~bootstrap/scss/bootstrap";
 @import "~datatables.net-bs5/css/dataTables.bootstrap5.min.css";
+@import "~datatables.net-buttons-bs5/css/buttons.bootstrap5.min.css";
 
 .btn-cadastrar{
     float: right;
@@ -11,4 +12,19 @@
 
 .hidden{
     visibility: hidden;
+}
+
+.btnExcel{
+    background-color: rgb(109, 250, 109);
+    color: rgb(112, 103, 103);
+    border-radius: 0.25rem !important;
+    box-shadow: 10px 5px 7px black;
+}
+
+.btnPdf{
+    background-color: rgb(248, 50, 50);
+    color:white;
+    margin-left: 1rem !important;
+    border-radius: 0.25rem !important;
+    box-shadow: 10px 5px 7px black;
 }

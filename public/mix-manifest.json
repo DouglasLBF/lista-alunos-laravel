@@ -1,11 +1,25 @@
 {
-    "/site-css/style.scss.css": "/site-css/style.scss.css",
-    "/site-css/yearpicker.css": "/site-css/yearpicker.css",
+    "/site-css/style.scss.css": "/site-css/style.scss.css?id=f8ef555ed2f5e38a3b05",
+    "/site-css/fontawesome.min.css": "/site-css/fontawesome.min.css?id=491bf1b519ec07888b99",
+    "/site-css/dataTables.bootstrap5.min.css": "/site-css/dataTables.bootstrap5.min.css?id=49db2c01b166371cdf8e",
+    "/site-css/buttons.bootstrap5.min.css": "/site-css/buttons.bootstrap5.min.css?id=0b1c0fcbf0980aaa57d6",
+    "/site-css/buttons.dataTables.min.css": "/site-css/buttons.dataTables.min.css?id=bd706230243f54eec560",
+    "/site-css/yearpicker.css": "/site-css/yearpicker.css?id=7737f6df79ac64dc9968",
+    "/site-css/solid.min.css": "/site-css/solid.min.css?id=1553b0d2200dbdb6189f",
+    "/site-css/brands.min.css": "/site-css/brands.min.css?id=bf28abcaef819bf2b59b",
+    "/site-js/fontawesome.min.js": "/site-js/fontawesome.min.js?id=27885091a80e7fc0206d",
     "/site-js/jquery.js": "/site-js/jquery.js?id=8fb8fee4fcc3cc86ff6c",
     "/site-js/bootstrap.js": "/site-js/bootstrap.js?id=7ccd9d390d31af98110f",
     "/site-js/dataTables.js": "/site-js/dataTables.js?id=17edbd1ce07f4882e5f6",
     "/site-js/dataTables-bs5.js": "/site-js/dataTables-bs5.js?id=cadc5f7463b65c2493f3",
+    "/site-js/dataTables.buttons.min.js": "/site-js/dataTables.buttons.min.js?id=89ffe41d527ef2cbda17",
+    "/site-js/buttons.print.min.js": "/site-js/buttons.print.min.js?id=4dd21c3a5392a5ff6d63",
+    "/site-js/buttons.html5.min.js": "/site-js/buttons.html5.min.js?id=eee05ac9856fef1952d5",
+    "/site-js/buttons.bootstrap5.min.js": "/site-js/buttons.bootstrap5.min.js?id=c9e51bc2ee0dba596776",
+    "/site-js/jszip.min.js": "/site-js/jszip.min.js?id=cb96c77f2c57e474a42d",
+    "/site-js/pdfmake.min.js": "/site-js/pdfmake.min.js?id=5d789f3231ab1473b815",
+    "/site-js/vfs_fonts.min.js": "/site-js/vfs_fonts.min.js?id=ca05b30d8f00d6f9f4a8",
     "/site-js/yearpicker.js": "/site-js/yearpicker.js?id=c3a76849f702abd9632e",
     "/site-js/app.js": "/site-js/app.js?id=9f31f16a1979c41d90c7",
-    "/site-js/alunos.js": "/site-js/alunos.js?id=3eff11a751c2f0382658"
+    "/site-js/alunos.js": "/site-js/alunos.js?id=bd89c110e69607a0ec0d"
 }
